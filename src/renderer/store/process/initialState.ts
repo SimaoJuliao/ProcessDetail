@@ -1,0 +1,50 @@
+import { ProcessInterface } from './interfaces/processInterface';
+
+const initialState: ProcessInterface = {
+  id: '',
+  proposalNumber: '',
+  policyNumber: '',
+  policyToReinforce: '',
+  state: 0,
+  proposalStatus: '',
+  productCode: '',
+  productDescription: '',
+  context: { agentCode: '', userEmail: '' },
+  canceled: false,
+  cancelDate: '',
+  cancellation_step: '',
+  startDate: '',
+  proposalCreationDate: '',
+  policyCreationDate: '',
+  unsolicitedPaymentCreationDate: '',
+  payments: [],
+  documentation: { documentKeys: [] },
+  investment: {
+    discount: {
+      campaignDescription: '',
+      subscriptionChargesPercentage: '',
+      subscriptionChargesPeriodicPercentage: '',
+      agentChargesPercentage: '',
+      agentChargesPeriodicPercentage: '',
+    },
+    deliveryType: '',
+    initialPremium: '',
+    optionId: '',
+    fundOwners: [],
+  },
+  investmentType: '',
+  taker: {
+    name: '',
+    vatNumber: '',
+    externalId: '',
+    companyOwners: [],
+    riskLevel: '',
+    riskLevelDesc: '',
+    riskLevelAdequate: false,
+  },
+  insuredPeople: [],
+  signatureType: '',
+  serviceRequests: [],
+};
+
+export default initialState;
